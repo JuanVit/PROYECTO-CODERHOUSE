@@ -14,5 +14,13 @@
     "nodemon": "^2.0.7",
     "sass-node": "^4.11.2"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuanVit/PROYECTO-CODERHOUSE.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JuanVit/PROYECTO-CODERHOUSE/issues"
+  },
+  "homepage": "https://github.com/JuanVit/PROYECTO-CODERHOUSE#readme",
   "description": ""
 }
