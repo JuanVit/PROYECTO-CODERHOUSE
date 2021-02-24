@@ -299,7 +299,7 @@ body{
 /*MENU*/
 .menu{
     background:linear-gradient(180deg, rgba(0, 0, 0, 0.075) , rgba(0, 0, 0, 0.89) ), url(../imagenes/menu-img.jpg);
-    @include banner( no-repeat, cover, fixed, center, 90%, 150px, white);
+    @include banner( no-repeat, cover, fixed, center, 100%, 150px, white);
     .menu__titulo{
         @extend .index__realEat;
         opacity: .6;
