@@ -41,6 +41,7 @@ body{
         font-weight: 550;
         .nav-link{
             color: white;
+            transition: all .5s ease;
         }
     }
 
@@ -305,16 +306,17 @@ body{
         opacity: .6;
     }
 }
-.menu-select{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    .menu-select__item{
-        color: $color-primary;
-        font-size: 20px;
-        font-weight: bold;
-        text-decoration: none;  
-    }
+
+.show{
+    display: block;
 }
+.filtrarPlato {
+    display: none;
+}
+.filtrarPlato.show {
+    display: block; 
+}
+
 
 .card{
     box-shadow: 0 2px 2px rgba(0, 0,0, 0.2 ) ;

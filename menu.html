@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="css/prueba.css" />
-    <script src="https://kit.fontawesome.com/58dcd15617.js" crossorigin="anonymous"></script>
+    <scrip src="https://kit.fontawesome.com/58dcd15617.js" crossorigin="anonymous"></scrip>
 </head>
 <body>
     <header class="container-fluid  menu">
@@ -50,23 +50,28 @@
 
     <section class="container menu-select">
         <div class="row">
-            <div class="col-12 text-center">
-                <a class="menu-select__item" href="#">
-                    BEBIDAS
-                </a>
-                <a class="menu-select__item" href="#">
-                    PLATOS
-                </a>
-                <a class="menu-select__item" href="#">
-                    BRUNCH
-                </a>
+            <div class="col-12 col-md-4 offset-md-4 col-lg-2 ooffset-lg-5 text-center">
+                <ul class="filterBtns">
+                    <li>
+                        <button class="" onclick="filterSelection('all')">Todos</button>
+                    </li>
+                    <li>
+                        <button class="" onclick="filterSelection('comida')">Comidas</button>
+                    </li>
+                    <li>
+                        <button class="" onclick="filterSelection('bebida')">Bebidas</button>
+                    </li>
+                    <li>
+                        <button class="" onclick="filterSelection('brunch')">Brunch</button>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
 
     <section class="container-fluid mt-5 mb-5">
         <div class="row">
-            <div class="col-12 col-md-6 col-lg-3">
+            <div class="col-12 col-md-6 col-lg-3 filtrarPlato comida">
                 <div class="card">
                     <img src="imagenes/hummus.JPEG" class="card-img-top" alt="Plato de Hummus acompañado de pan de Pizza.">
                     <div class="card-body text-center">
@@ -75,7 +80,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-3">
+            <div class="col-12 col-md-6 col-lg-3 filtrarPlato brunch">
                 <div class="card">
                     <img src="imagenes/hummus.JPEG" class="card-img-top" alt="...">
                     <div class="card-body text-center">
@@ -84,7 +89,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-3">
+            <div class="col-12 col-md-6 col-lg-3 filtrarPlato brunch">
                 <div class="card">
                     <img src="imagenes/hummus.JPEG" class="card-img-top" alt="...">
                     <div class="card-body text-center">
@@ -93,7 +98,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-3">
+            <div class="col-12 col-md-6 col-lg-3 filtrarPlato bebida">
                 <div class="card">
                     <img src="imagenes/hummus.JPEG" class="card-img-top" alt="...">
                     <div class="card-body text-center">
@@ -102,7 +107,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-3">
+            <div class="col-12 col-md-6 col-lg-3 filtrarPlato brunch">
                 <div class="card">
                     <img src="imagenes/hummus.JPEG" class="card-img-top" alt="...">
                     <div class="card-body text-center">
@@ -111,7 +116,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-3">
+            <div class="col-12 col-md-6 col-lg-3 filtrarPlato comida">
                 <div class="card">
                     <img src="imagenes/hummus.JPEG" class="card-img-top" alt="...">
                     <div class="card-body text-center">
@@ -120,7 +125,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-3">
+            <div class="col-12 col-md-6 col-lg-3 filtrarPlato comida">
                 <div class="card">
                     <img src="imagenes/hummus.JPEG" class="card-img-top" alt="...">
                     <div class="card-body text-center">
@@ -159,6 +164,48 @@
             </div>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <scrip src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></scrip>
+    <scrip src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></scrip>
+    <script>
+        filterSelection("all");
+        function filterSelection(c) {
+           var x, i;
+           x = document.querySelectorAll(".filtrarPlato");
+           if (c == "all") c = "";
+           Array.from(x).forEach(item => {
+              removeActiveClass(item, "show");
+              if (item.className.indexOf(c) > -1) addActiveClass(item, "show");
+           });
+        }
+        function addActiveClass(ele, name) {
+           var i, arr1, arr2;
+           arr1 = ele.className.split(" ");
+           arr2 = name.split(" ");
+           for (i = 0; i < arr2.length; i++) {
+              if (arr1.indexOf(arr2[i]) == -1) {
+                 ele.className += " " + arr2[i];
+              }
+           }
+        }
+        function removeActiveClass(ele, name) {
+           var i, arr1, arr2;
+           arr1 = ele.className.split(" ");
+           arr2 = name.split(" ");
+           for (i = 0; i < arr2.length; i++) {
+              while (arr1.indexOf(arr2[i]) > -1) {
+                 arr1.splice(arr1.indexOf(arr2[i]), 1);
+              }
+           }
+           ele.className = arr1.join(" ");
+        }
+        var filterBtns = document.querySelector(".filterBtns");
+        var btns = filterBtns.getElementsByTagName("button");
+        for (var i = 0; i < btns.length; i++) {
+           btns[i].addEventListener("click", function() {
+              var current = document.getElementsByClassName("active");
+              current[0].className = current[0].className.replace("active", "");
+              this.classList.add("active");
+           });
+        }
+    </script>
 </body>

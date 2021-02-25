@@ -22,7 +22,8 @@ body {
   font-size: 20px;
   font-weight: 550; }
   .navbar .nav-item .nav-link {
-    color: white; }
+    color: white;
+    transition: all .5s ease; }
 
 .index {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.075), rgba(0, 0, 0, 0.89)), url(../imagenes/realEatl-img.jpeg);
@@ -250,14 +251,14 @@ body {
   .menu .menu__titulo {
     opacity: .6; }
 
-.menu-select {
-  padding-top: 50px;
-  padding-bottom: 50px; }
-  .menu-select .menu-select__item {
-    color: #8B4513;
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none; }
+.show {
+  display: block; }
+
+.filtrarPlato {
+  display: none; }
+
+.filtrarPlato.show {
+  display: block; }
 
 .card {
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
