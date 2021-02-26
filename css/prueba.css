@@ -253,6 +253,9 @@ body {
   .menu .menu__titulo {
     opacity: .6; }
 
+.menu-select .card {
+  height: 450px !important; }
+
 .menu-select .filterBtns {
   list-style: none; }
   .menu-select .filterBtns .menu__btn {
@@ -260,19 +263,37 @@ body {
     border: none;
     background-color: transparent;
     font-size: 25px;
-    color: #777777;
+    color: #8B4513;
     font-weight: bold;
     padding-top: 30px;
     padding-bottom: 20px;
     padding-left: 25px;
     padding-right: 25px;
-    transition: all .3s ease; }
-    .menu-select .filterBtns .menu__btn:hover {
-      color: #120A8F;
-      transform: scale(1.25); }
-  .menu-select .filterBtns .btn-active {
-    color: #120A8F;
-    transform: scale(1.25); }
+    transition: width .3s ease; }
+    .menu-select .filterBtns .menu__btn:hover::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 4px;
+      background-color: #8B4513; }
+    .menu-select .filterBtns .menu__btn:hover::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 4px;
+      background-color: #8B4513; }
+  .menu-select .filterBtns .btn-active::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #8B4513; }
+  .menu-select .filterBtns .btn-active::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #8B4513; }
 
 .menu-grid .filtrarPlato {
   display: none; }
