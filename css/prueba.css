@@ -253,9 +253,6 @@ body {
   .menu .menu__titulo {
     opacity: .6; }
 
-.menu-select .card {
-  height: 450px !important; }
-
 .menu-select .filterBtns {
   list-style: none; }
   .menu-select .filterBtns .menu__btn {
@@ -297,25 +294,25 @@ body {
 
 .menu-grid .filtrarPlato {
   display: none; }
+  .menu-grid .filtrarPlato .card {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    transition: all 0.25s;
+    margin-bottom: 20px;
+    height: 450px; }
+    .menu-grid .filtrarPlato .card:hover {
+      transform: translateY(-15px);
+      box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
+      .menu-grid .filtrarPlato .card:hover .card-body .card-title {
+        color: #8B4513;
+        font-size: 20px;
+        font-weight: bold; }
+      .menu-grid .filtrarPlato .card:hover .card-body .card-text {
+        color: #777777;
+        font-size: 18px;
+        font-weight: 500; }
 
 .menu-grid .show {
   display: block; }
-
-.card {
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-  transition: all 0.25s;
-  margin-bottom: 20px; }
-  .card:hover {
-    transform: translateY(-15px);
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
-  .card .card-body .card-title {
-    color: #8B4513;
-    font-size: 20px;
-    font-weight: bold; }
-  .card .card-body .card-text {
-    color: #777777;
-    font-size: 18px;
-    font-weight: 500; }
 
 /*sucursales*/
 .sucursales {
