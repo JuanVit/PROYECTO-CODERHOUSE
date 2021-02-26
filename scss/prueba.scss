@@ -128,7 +128,6 @@ body{
         .objetivo__size{
             font-size: 20px;
             color: $color-primary;
-
         }
     }
 }
@@ -191,7 +190,6 @@ body{
     color:$color-primary  ;
     padding-top: 100px;
     padding-bottom: 100px;
-
     .historia__decorated{
         overflow: hidden;
         text-align: center;
@@ -307,14 +305,40 @@ body{
     }
 }
 
-.show{
-    display: block;
+.menu-select{
+    .filterBtns{
+        list-style: none;
+        .menu__btn{
+            text-decoration: none;
+            border: none;
+            background-color: transparent;
+            font-size: 25px;
+            color: $color-secundary;
+            font-weight: bold;
+            padding-top:30px;
+            padding-bottom: 20px;
+            padding-left: 25px;
+            padding-right: 25px;
+            transition: all .3s ease;
+            &:hover{
+                color: #120A8F;
+                transform: scale(1.25);
+
+            }
+        }
+        .btn-active{
+            color: #120A8F;
+            transform: scale(1.25);
+        }
+    }
 }
-.filtrarPlato {
-    display: none;
-}
-.filtrarPlato.show {
-    display: block; 
+.menu-grid{
+    .filtrarPlato{
+        display: none;
+    }
+    .show{
+        display: block;
+    }
 }
 
 

@@ -251,13 +251,31 @@ body {
   .menu .menu__titulo {
     opacity: .6; }
 
-.show {
-  display: block; }
+.menu-select .filterBtns {
+  list-style: none; }
+  .menu-select .filterBtns .menu__btn {
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
+    color: #777777;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    transition: all .3s ease; }
+    .menu-select .filterBtns .menu__btn:hover {
+      color: #120A8F;
+      transform: scale(1.25); }
+  .menu-select .filterBtns .btn-active {
+    color: #120A8F;
+    transform: scale(1.25); }
 
-.filtrarPlato {
+.menu-grid .filtrarPlato {
   display: none; }
 
-.filtrarPlato.show {
+.menu-grid .show {
   display: block; }
 
 .card {
