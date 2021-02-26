@@ -11,19 +11,21 @@ body {
 
 /* NAVEGADOR */
 .bg-dark {
-  background-color: transparent !important; }
+  background-color: transparent  !important; }
+
+.bg-dark.scrolled {
+  background: white !important; }
 
 .navbar .navbar-brand {
   font-size: 25px;
   font-weight: bold;
   color: white; }
 
-.navbar .nav-item {
+.navbar .nav-item .nav-link {
   font-size: 20px;
-  font-weight: 550; }
-  .navbar .nav-item .nav-link {
-    color: white;
-    transition: all .5s ease; }
+  font-weight: 550;
+  color: white;
+  transition: all .5s ease; }
 
 .index {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.075), rgba(0, 0, 0, 0.89)), url(../imagenes/realEatl-img.jpeg);

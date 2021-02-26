@@ -28,18 +28,21 @@ body{
 }
 /* NAVEGADOR */
 .bg-dark{
-    background-color:transparent !important;
+    background-color: transparent  !important;
+}
+.bg-dark.scrolled{
+    background: white !important;
 }
 .navbar{
     .navbar-brand{
         font-size:25px ;
         font-weight: bold;
-        color:white;
+        color:white; 
     }
     .nav-item{
-        font-size: 20px;
-        font-weight: 550;
         .nav-link{
+            font-size: 20px;
+            font-weight: 550;
             color: white;
             transition: all .5s ease;
         }

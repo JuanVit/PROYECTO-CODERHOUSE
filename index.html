@@ -13,9 +13,9 @@
     <script src="https://kit.fontawesome.com/58dcd15617.js" crossorigin="anonymous"></script>
 </head>
 <header class="container-fluid index">
-    <div class="row bg-dark">
+    <div class="row">
         <div class="col-lg-10 offset-lg-1">
-            <nav class="  navbar navbar-expand-lg navbar-dark">
+            <nav class="  navbar navbar-expand-lg navbar-dark bg-dark">
                     <a class="navbar-brand" href="index.html">Real Eat.</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -41,13 +41,13 @@
                 </div>
             </nav>    
         </div>
-    </div>
-    <div class="col-md-12 d-flex align-items-center justify-content-center">
-        <h1 class="index__realEat">Real Eat.</h1>
+        <div class="col-md-12 d-flex align-items-center justify-content-center">
+            <h1 class="index__realEat">Real Eat.</h1>
+        </div>
     </div>
 </header>
 
-    <main class="container valores">
+    <section class="container valores">
         <div class="row">
             <div class="col-12 text-center "><h2 class="valores__decorated"><span>¿Por qué Real Eat.?</span></h2></div>
             <div class="col-12 col-md-4  d-flex flex-column align-items-center justify-content-center valores__icon">
@@ -78,7 +78,7 @@
                 </p>
             </div>
         </div>
-    </main>
+    </section>
     <section class="container-fluid horarios">
         <div class="row">
             <div class="col-12">
@@ -151,5 +151,11 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <!--NavBar background scroll-->
+    <script>
+        $(window).scroll(function(){
+            $('nav').toggleClass('scrolled', $(this).scrolltop() > 20);
+        });
+    </script>
 </body>
 </html>
