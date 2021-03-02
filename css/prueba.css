@@ -39,7 +39,7 @@ body {
   padding-bottom: 150px;
   color: white; }
 
-.index__realEat, .nosotros .nosotros__titulo, .menu .menu__titulo, .sucursales .sucursales__titulo {
+.index__titulo, .nosotros .nosotros__titulo, .menu .menu__titulo, .sucursales .sucursales__titulo, .contacto .contacto__titulo {
   font-weight: 550;
   padding-top: 150px; }
 
@@ -313,7 +313,7 @@ body {
 
 /*sucursales*/
 .sucursales {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.075), rgba(0, 0, 0, 0.89)), url(../imagenes/sucursales-img-alt.jpg);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.075), rgba(0, 0, 0, 0.89)), url(../imagenes/sucursales-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
@@ -362,6 +362,18 @@ body {
     color: #8B4513;
     background: white;
     border: 2px solid #8B4513; }
+
+/* CONTACTO */
+.contacto {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.075), rgba(0, 0, 0, 0.89)), url(../imagenes/contacto-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: 100%;
+  padding-bottom: 150px;
+  color: white; }
+  .contacto .contacto__titulo {
+    opacity: .6; }
 
 /*FOOTER*/
 .footer {
@@ -447,7 +459,7 @@ body {
           color: white; }
 
 @media only screen and (min-width: 992px) {
-  .index__realEat, .nosotros .nosotros__titulo, .menu .menu__titulo, .sucursales .sucursales__titulo {
+  .index__titulo, .nosotros .nosotros__titulo, .menu .menu__titulo, .sucursales .sucursales__titulo, .contacto .contacto__titulo {
     font-size: 100px; }
   .footer__columna-2 {
     text-align: right;
@@ -457,7 +469,7 @@ body {
     background-attachment: fixed; } }
 
 @media only screen and (max-width: 991px) {
-  .index__realEat, .nosotros .nosotros__titulo, .menu .menu__titulo, .sucursales .sucursales__titulo {
+  .index__titulo, .nosotros .nosotros__titulo, .menu .menu__titulo, .sucursales .sucursales__titulo, .contacto .contacto__titulo {
     font-size: 50px; }
   .footer__columna-2 {
     text-align: start;

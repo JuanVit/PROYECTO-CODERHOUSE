@@ -55,7 +55,7 @@ body{
     background:linear-gradient(180deg, rgba(0, 0, 0, 0.075) , rgba(0, 0, 0, 0.89) ), url(../imagenes/realEatl-img.jpeg);
     @include banner( no-repeat, cover, center, 100%, 150px, white);
 }
-    .index__realEat{
+    .index__titulo{
         font-weight: 550;
         padding-top: 150px;
     }
@@ -169,7 +169,7 @@ body{
     background:linear-gradient(180deg, rgba(0, 0, 0, 0.075) , rgba(0, 0, 0, 0.89) ),url(../imagenes/nosotros-background.jpeg);
     @include banner(no-repeat, cover, center,100%, 150px, white);
     .nosotros__titulo{
-        @extend .index__realEat;
+        @extend .index__titulo;
         opacity: .6;
     }
 }
@@ -292,7 +292,7 @@ body{
     background:linear-gradient(180deg, rgba(0, 0, 0, 0.075) , rgba(0, 0, 0, 0.89) ), url(../imagenes/menu-img.jpg);
     @include banner(no-repeat, cover, center, 100%, 150px, white);
     .menu__titulo{
-        @extend .index__realEat;
+        @extend .index__titulo;
         opacity: .6;
     }
 }
@@ -382,10 +382,10 @@ body{
 /*sucursales*/
 
 .sucursales{
-    background:linear-gradient(180deg, rgba(0, 0, 0, 0.075) , rgba(0, 0, 0, 0.89) ), url(../imagenes/sucursales-img-alt.jpg) ;
+    background:linear-gradient(180deg, rgba(0, 0, 0, 0.075) , rgba(0, 0, 0, 0.89) ), url(../imagenes/sucursales-img.jpg) ;
     @include banner(no-repeat , cover, center, 100%, 150px, white);
     .sucursales__titulo{
-        @extend .index__realEat;
+        @extend .index__titulo;
         opacity: .6;
     }
 }
@@ -437,6 +437,18 @@ body{
         }
     }
 }
+
+/* CONTACTO */
+.contacto{
+    background:linear-gradient(180deg, rgba(0, 0, 0, 0.075) , rgba(0, 0, 0, 0.89) ),url(../imagenes/contacto-img.jpg);
+    @include banner(no-repeat, cover, center,100%, 150px, white);
+    .contacto__titulo{
+        @extend .index__titulo;
+        opacity: .6;
+    }
+}
+
+
 /*FOOTER*/
 .footer {
     padding-top: 50px;
@@ -559,7 +571,7 @@ body{
 }
 
 @media only screen and (min-width: 992px){
-    .index__realEat{
+    .index__titulo{
         font-size: 100px;
     }
     .footer__columna-2{
@@ -572,7 +584,7 @@ body{
     }
 }
 @media only screen and (max-width: 991px){
-    .index__realEat{
+    .index__titulo{
         font-size: 50px;
     }
     .footer__columna-2{
