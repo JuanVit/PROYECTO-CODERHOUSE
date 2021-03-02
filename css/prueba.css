@@ -16,6 +16,9 @@ body {
 .bg-dark.scrolled {
   background: white !important; }
 
+.navbar .navbar-toggler {
+  border: none; }
+
 .navbar .navbar-brand {
   font-size: 25px;
   font-weight: bold;
@@ -31,7 +34,6 @@ body {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.075), rgba(0, 0, 0, 0.89)), url(../imagenes/realEatl-img.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   background-position-x: center;
   background-position-y: 90%;
   padding-bottom: 150px;
@@ -130,7 +132,6 @@ body {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.075), rgba(0, 0, 0, 0.89)), url(../imagenes/nosotros-background.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   background-position-x: center;
   background-position-y: 80%;
   padding-bottom: 150px;
@@ -245,7 +246,6 @@ body {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.075), rgba(0, 0, 0, 0.89)), url(../imagenes/menu-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   background-position-x: center;
   background-position-y: 100%;
   padding-bottom: 150px;
@@ -318,7 +318,6 @@ body {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.075), rgba(0, 0, 0, 0.89)), url(../imagenes/sucursales-img-alt.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   background-position-x: center;
   background-position-y: center;
   padding-bottom: 150px;
@@ -455,7 +454,9 @@ body {
   .footer__columna-2 {
     text-align: right;
     padding-bottom: 0px;
-    padding-top: 0px; } }
+    padding-top: 0px; }
+  .index, .nosotros, .menu, .sucursales {
+    background-attachment: fixed; } }
 
 @media only screen and (max-width: 900px) {
   .index__realEat, .nosotros .nosotros__titulo, .menu .menu__titulo, .sucursales .sucursales__titulo {
@@ -463,4 +464,6 @@ body {
   .footer__columna-2 {
     text-align: start;
     padding-bottom: 20px;
-    padding-top: 10px; } }
+    padding-top: 10px; }
+  .index, .nosotros, .menu, .sucursales {
+    background-attachment: none; } }

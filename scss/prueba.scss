@@ -3,10 +3,9 @@ $backgroundWall:url(../imagenes/background-wall.jpg);
 $color-primary:#8B4513;
 $color-secundary:#777777;
 
-@mixin banner( $background-repeat,$background-size,$background-attachment,$background-position-x,$background-position-y,$padding-bottom,$color){
+@mixin banner( $background-repeat,$background-size,$background-position-x,$background-position-y,$padding-bottom,$color){
     background-repeat: $background-repeat;
     background-size: $background-size;
-    background-attachment: $background-attachment;
     background-position-x: $background-position-x;
     background-position-y: $background-position-y;
     padding-bottom: $padding-bottom;
@@ -34,6 +33,9 @@ body{
     background: white !important;
 }
 .navbar{
+    .navbar-toggler{
+        border: none;
+    }
     .navbar-brand{
         font-size:25px ;
         font-weight: bold;
@@ -51,7 +53,7 @@ body{
 }
 .index{
     background:linear-gradient(180deg, rgba(0, 0, 0, 0.075) , rgba(0, 0, 0, 0.89) ), url(../imagenes/realEatl-img.jpeg);
-    @include banner( no-repeat, cover, fixed, center, 90%, 150px, white);
+    @include banner( no-repeat, cover, center, 90%, 150px, white);
 }
     .index__realEat{
         font-weight: 550;
@@ -172,7 +174,7 @@ body{
 
 .nosotros{
     background:linear-gradient(180deg, rgba(0, 0, 0, 0.075) , rgba(0, 0, 0, 0.89) ),url(../imagenes/nosotros-background.jpeg);
-    @include banner(no-repeat, cover, fixed, center, 80%, 
+    @include banner(no-repeat, cover, center, 80%, 
     150px, white);
     .nosotros__titulo{
         @extend .index__realEat;
@@ -301,7 +303,7 @@ body{
 /*MENU*/
 .menu{
     background:linear-gradient(180deg, rgba(0, 0, 0, 0.075) , rgba(0, 0, 0, 0.89) ), url(../imagenes/menu-img.jpg);
-    @include banner( no-repeat, cover, fixed, center, 100%, 150px, white);
+    @include banner( no-repeat, cover, center, 100%, 150px, white);
     .menu__titulo{
         @extend .index__realEat;
         opacity: .6;
@@ -394,7 +396,7 @@ body{
 
 .sucursales{
     background:linear-gradient(180deg, rgba(0, 0, 0, 0.075) , rgba(0, 0, 0, 0.89) ), url(../imagenes/sucursales-img-alt.jpg) ;
-    @include banner(no-repeat , cover, fixed, center, center, 150px, white);
+    @include banner(no-repeat , cover, center, center, 150px, white);
     .sucursales__titulo{
         @extend .index__realEat;
         opacity: .6;
@@ -578,6 +580,9 @@ body{
         padding-bottom: 0px;
         padding-top: 0px;
     }
+    .index, .nosotros, .menu, .sucursales{
+        background-attachment: fixed;
+    }
 }
 @media only screen and (max-width: 900px){
     .index__realEat{
@@ -587,5 +592,8 @@ body{
         text-align: start;
         padding-bottom: 20px;
         padding-top:10px;
+    }
+    .index, .nosotros, .menu, .sucursales{
+        background-attachment: none;
     }
 }
