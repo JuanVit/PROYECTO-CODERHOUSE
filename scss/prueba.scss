@@ -53,7 +53,7 @@ body{
 }
 .index{
     background:linear-gradient(180deg, rgba(0, 0, 0, 0.075) , rgba(0, 0, 0, 0.89) ), url(../imagenes/realEatl-img.jpeg);
-    @include banner( no-repeat, cover, center,center,  150px, white);
+    @include banner( no-repeat, cover, center, 100%, 150px, white);
 }
     .index__realEat{
         font-weight: 550;
@@ -167,8 +167,7 @@ body{
 
 .nosotros{
     background:linear-gradient(180deg, rgba(0, 0, 0, 0.075) , rgba(0, 0, 0, 0.89) ),url(../imagenes/nosotros-background.jpeg);
-    @include banner(no-repeat, cover, center,100%, 
-    150px, white);
+    @include banner(no-repeat, cover, center,100%, 150px, white);
     .nosotros__titulo{
         @extend .index__realEat;
         opacity: .6;
@@ -291,7 +290,7 @@ body{
 /*MENU*/
 .menu{
     background:linear-gradient(180deg, rgba(0, 0, 0, 0.075) , rgba(0, 0, 0, 0.89) ), url(../imagenes/menu-img.jpg);
-    @include banner(no-repeat, cover, center, center, 150px, white);
+    @include banner(no-repeat, cover, center, 100%, 150px, white);
     .menu__titulo{
         @extend .index__realEat;
         opacity: .6;
@@ -384,7 +383,7 @@ body{
 
 .sucursales{
     background:linear-gradient(180deg, rgba(0, 0, 0, 0.075) , rgba(0, 0, 0, 0.89) ), url(../imagenes/sucursales-img-alt.jpg) ;
-    @include banner(no-repeat , cover, center, center, 150px, white);
+    @include banner(no-repeat , cover, center, 100%, 150px, white);
     .sucursales__titulo{
         @extend .index__realEat;
         opacity: .6;
