@@ -35,7 +35,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
-  background-position-y: 90%;
+  background-position-y: center;
   padding-bottom: 150px;
   color: white; }
 
@@ -78,6 +78,28 @@ body {
       font-weight: 600;
       color: #777777; }
 
+.horarios {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.075), rgba(0, 0, 0, 0.89)), url(../imagenes/horarios-img.jpg);
+  background-position-y: 20%;
+  background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  .horarios .horarios__titulo {
+    color: white;
+    font-size: 45px;
+    font-weight: bold; }
+  .horarios .horarios__texto {
+    color: white;
+    padding-top: 30px; }
+    .horarios .horarios__texto h2 {
+      font-size: 35px;
+      color: #B29859;
+      font-weight: bold; }
+    .horarios .horarios__texto p {
+      font-size: 30px;
+      padding-top: 20px;
+      font-weight: bold; }
+
 .objetivo {
   padding-top: 100px;
   padding-bottom: 100px; }
@@ -103,37 +125,13 @@ body {
       font-size: 20px;
       color: #8B4513; }
 
-.horarios {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.075), rgba(0, 0, 0, 0.89)), url(../imagenes/horarios-img.jpg);
-  background-position-x: center;
-  background-position-y: 20%;
-  background-size: cover;
-  background-attachment: fixed;
-  padding-top: 50px;
-  padding-bottom: 50px; }
-  .horarios .horarios__titulo {
-    color: white;
-    font-size: 45px;
-    font-weight: bold; }
-  .horarios .horarios__texto {
-    color: white;
-    padding-top: 30px; }
-    .horarios .horarios__texto h2 {
-      font-size: 35px;
-      color: #B29859;
-      font-weight: bold; }
-    .horarios .horarios__texto p {
-      font-size: 30px;
-      padding-top: 20px;
-      font-weight: bold; }
-
 /* NOSOTROS */
 .nosotros {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.075), rgba(0, 0, 0, 0.89)), url(../imagenes/nosotros-background.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
-  background-position-y: 80%;
+  background-position-y: 100%;
   padding-bottom: 150px;
   color: white; }
   .nosotros .nosotros__titulo {
@@ -189,11 +187,11 @@ body {
 .recursos {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.075), rgba(0, 0, 0, 0.89)), url(../imagenes/img-recursos.jpeg);
   opacity: .9;
+  background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
   background-position-y: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  padding-bottom: 150px;
   color: white;
   padding-top: 50px;
   padding-bottom: 50px; }
@@ -247,7 +245,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
-  background-position-y: 100%;
+  background-position-y: center;
   padding-bottom: 150px;
   color: white; }
   .menu .menu__titulo {
@@ -448,22 +446,30 @@ body {
         .footer .footer__columna-3 ul li a:hover {
           color: white; }
 
-@media only screen and (min-width: 901px) {
+@media only screen and (min-width: 992px) {
   .index__realEat, .nosotros .nosotros__titulo, .menu .menu__titulo, .sucursales .sucursales__titulo {
     font-size: 100px; }
   .footer__columna-2 {
     text-align: right;
     padding-bottom: 0px;
     padding-top: 0px; }
-  .index, .nosotros, .menu, .sucursales {
+  .index, .nosotros, .menu, .sucursales, .horarios, .recursos {
     background-attachment: fixed; } }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 991px) {
   .index__realEat, .nosotros .nosotros__titulo, .menu .menu__titulo, .sucursales .sucursales__titulo {
     font-size: 50px; }
   .footer__columna-2 {
     text-align: start;
     padding-bottom: 20px;
     padding-top: 10px; }
-  .index, .nosotros, .menu, .sucursales {
-    background-attachment: none; } }
+  .index, .nosotros, .menu, .sucursales, .horarios, .recursos {
+    background-attachment: scroll; } }
+
+@media only screen and (min-width: 401px) {
+  .horarios {
+    background-position-x: center; } }
+
+@media only screen and (max-width: 400px) {
+  .horarios {
+    background-position-x: 60%; } }
