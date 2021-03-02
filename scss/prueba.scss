@@ -437,7 +437,6 @@ body{
         }
     }
 }
-
 /* CONTACTO */
 .contacto{
     background:linear-gradient(180deg, rgba(0, 0, 0, 0.075) , rgba(0, 0, 0, 0.89) ),url(../imagenes/contacto-img.jpg);
@@ -447,7 +446,6 @@ body{
         opacity: .6;
     }
 }
-
 
 /*FOOTER*/
 .footer {
@@ -579,7 +577,7 @@ body{
         padding-bottom: 0px;
         padding-top: 0px;
     }
-    .index, .nosotros, .menu, .sucursales, .horarios, .recursos{
+    .index, .nosotros, .menu, .sucursales, .contacto, .horarios, .recursos{
         background-attachment: fixed;
     }
 }
@@ -592,7 +590,7 @@ body{
         padding-bottom: 20px;
         padding-top:10px;
     }
-    .index, .nosotros, .menu, .sucursales, .horarios, .recursos{
+    .index, .nosotros, .menu, .sucursales, .contacto, .horarios, .recursos{
         background-attachment: scroll;
     }
 }
