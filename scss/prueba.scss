@@ -133,8 +133,6 @@ body{
 }
 
 .objetivo{
-    padding-top: 150px;
-    padding-bottom: 150px;
     .objetivo__texto{
         color: $color-secundary;
         font-weight: bold;
@@ -603,6 +601,14 @@ body{
     .horarios{
         background-position-x: center;
     }
+    .objetivo{
+        padding-top: 150px;
+        padding-bottom: 150px;
+        .objetivo__titulo{
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+    }
     .carousel__texto{
         font-size: 85px;
     }
@@ -610,6 +616,14 @@ body{
 @media only screen and (max-width: 400px){
     .horarios{
         background-position-x: 60%;
+    }
+    .objetivo{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        .objetivo__titulo{
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
     }
     .carousel__texto{
         font-size: 50px;

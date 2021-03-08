@@ -100,20 +100,17 @@ body {
       padding-top: 20px;
       font-weight: bold; }
 
-.objetivo {
-  padding-top: 150px;
-  padding-bottom: 150px; }
-  .objetivo .objetivo__texto {
-    color: #777777;
-    font-weight: bold; }
-    .objetivo .objetivo__texto .objetivo__titulo {
-      font-size: 42px;
-      font-weight: bold;
-      text-align: center;
-      color: #8B4513; }
-    .objetivo .objetivo__texto .objetivo__size {
-      font-size: 20px;
-      color: #8B4513; }
+.objetivo .objetivo__texto {
+  color: #777777;
+  font-weight: bold; }
+  .objetivo .objetivo__texto .objetivo__titulo {
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+    color: #8B4513; }
+  .objetivo .objetivo__texto .objetivo__size {
+    font-size: 20px;
+    color: #8B4513; }
 
 .index-slide .carousel-item .carousel-caption {
   position: absolute;
@@ -480,11 +477,23 @@ body {
 @media only screen and (min-width: 401px) {
   .horarios {
     background-position-x: center; }
+  .objetivo {
+    padding-top: 150px;
+    padding-bottom: 150px; }
+    .objetivo .objetivo__titulo {
+      padding-top: 0px;
+      padding-bottom: 0px; }
   .carousel__texto {
     font-size: 85px; } }
 
 @media only screen and (max-width: 400px) {
   .horarios {
     background-position-x: 60%; }
+  .objetivo {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+    .objetivo .objetivo__titulo {
+      padding-top: 20px;
+      padding-bottom: 10px; }
   .carousel__texto {
     font-size: 50px; } }
