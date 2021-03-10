@@ -450,6 +450,7 @@ body{
     }
 }
 .contacto-body{
+    padding-bottom: 100px;
     .contacto-body__title{
         font-size: 50px;
         font-weight: bold;
@@ -462,25 +463,69 @@ body{
             font-weight: bold;
         }
     }
-    .input-content{
-        padding: 10px;
-        width: 70%;
-        outline: none;
-        box-shadow: none;
-        border: none;
-        transition: all .1s ease;
-        &:focus{
-            border-bottom: solid 3px $color-primary;
+    .form-card{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        .input-content{
+            font-size: 17px;
+            height: 100%;
+            width: 85%;
+            border: none;
+            border-bottom: 1px solid silver;
+            outline: none;
+            &:focus ~ .label-content, 
+            &:valid ~ .label-content{
+                transform: translateY(-20px);
+                font-size: 15px;
+                color: $color-primary;
+            }
+            &:focus ~ .underline::before, 
+            &:valid ~ .underline::before{
+                transform: scaleX(1);
+            }
+        }
+        .underline{
+            position: absolute;
+            bottom: 0px;
+            height: 2px;
+            width: 85%;
+            &::before{
+                position: absolute;
+                content: "";
+                height: 100%;
+                width: 100%;
+                background:	#652e1c;
+                transform:scaleX(0);
+                transition: transform .3s ease;
+            }
+        }
+        .label-content{
+            position: absolute;
+            bottom: 2px;
+            left: 0%;
+            pointer-events: none;
+            transition: all .3s ease;
+            font-size: 18px;
+            font-weight: bold;
         }
     }
+
     .contacto-body__side{
         ul{
             list-style: none;
+            li{
+                p{
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: $color-secundary;
+                }
+            }
         }
         margin-top: 30px;
         .contacto-body__side--icon{
-            font-size: 100px;
-            color: #4682B4;
+            font-size: 80px;
+            color:	#2b4176;
         }
     }
 }

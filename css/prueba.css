@@ -372,34 +372,68 @@ body {
   .contacto .contacto__titulo {
     opacity: .6; }
 
-.contacto-body .contacto-body__title {
-  font-size: 50px;
-  font-weight: bold;
-  color: #8B4513; }
-
-.contacto-body .contacto-body__text {
-  font-size: 20px;
-  color: #777777; }
-  .contacto-body .contacto-body__text span {
-    font-weight: bold; }
-
-.contacto-body .input-content {
-  padding: 10px;
-  width: 70%;
-  outline: none;
-  box-shadow: none;
-  border: none;
-  transition: all .1s ease; }
-  .contacto-body .input-content:focus {
-    border-bottom: solid 3px #8B4513; }
-
-.contacto-body .contacto-body__side {
-  margin-top: 30px; }
-  .contacto-body .contacto-body__side ul {
-    list-style: none; }
-  .contacto-body .contacto-body__side .contacto-body__side--icon {
-    font-size: 100px;
-    color: #4682B4; }
+.contacto-body {
+  padding-bottom: 100px; }
+  .contacto-body .contacto-body__title {
+    font-size: 50px;
+    font-weight: bold;
+    color: #8B4513; }
+  .contacto-body .contacto-body__text {
+    font-size: 20px;
+    color: #777777; }
+    .contacto-body .contacto-body__text span {
+      font-weight: bold; }
+  .contacto-body .form-card {
+    width: 100%;
+    height: 100%;
+    position: relative; }
+    .contacto-body .form-card .input-content {
+      font-size: 17px;
+      height: 100%;
+      width: 85%;
+      border: none;
+      border-bottom: 1px solid silver;
+      outline: none; }
+      .contacto-body .form-card .input-content:focus ~ .label-content,
+      .contacto-body .form-card .input-content:valid ~ .label-content {
+        transform: translateY(-20px);
+        font-size: 15px;
+        color: #8B4513; }
+      .contacto-body .form-card .input-content:focus ~ .underline::before,
+      .contacto-body .form-card .input-content:valid ~ .underline::before {
+        transform: scaleX(1); }
+    .contacto-body .form-card .underline {
+      position: absolute;
+      bottom: 0px;
+      height: 2px;
+      width: 85%; }
+      .contacto-body .form-card .underline::before {
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+        background: #652e1c;
+        transform: scaleX(0);
+        transition: transform .3s ease; }
+    .contacto-body .form-card .label-content {
+      position: absolute;
+      bottom: 2px;
+      left: 0%;
+      pointer-events: none;
+      transition: all .3s ease;
+      font-size: 18px;
+      font-weight: bold; }
+  .contacto-body .contacto-body__side {
+    margin-top: 30px; }
+    .contacto-body .contacto-body__side ul {
+      list-style: none; }
+      .contacto-body .contacto-body__side ul li p {
+        font-size: 16px;
+        font-weight: bold;
+        color: #777777; }
+    .contacto-body .contacto-body__side .contacto-body__side--icon {
+      font-size: 80px;
+      color: #2b4176; }
 
 /*FOOTER*/
 .footer {
