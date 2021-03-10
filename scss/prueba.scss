@@ -275,6 +275,7 @@ body{
         left: 100%;
     }
     .historia-dos__texto{
+        padding-top: 15px;
         font-size: 18px;
         font-weight: 600;
         display: flex;
@@ -448,6 +449,42 @@ body{
         opacity: .6;
     }
 }
+.contacto-body{
+    .contacto-body__title{
+        font-size: 50px;
+        font-weight: bold;
+        color: $color-primary;
+    }
+    .contacto-body__text{
+        font-size: 20px;
+        color: $color-secundary;
+        span{
+            font-weight: bold;
+        }
+    }
+    .input-content{
+        padding: 10px;
+        width: 70%;
+        outline: none;
+        box-shadow: none;
+        border: none;
+        transition: all .1s ease;
+        &:focus{
+            border-bottom: solid 3px $color-primary;
+        }
+    }
+    .contacto-body__side{
+        ul{
+            list-style: none;
+        }
+        margin-top: 30px;
+        .contacto-body__side--icon{
+            font-size: 100px;
+            color: #4682B4;
+        }
+    }
+}
+
 
 /*FOOTER*/
 .footer {
@@ -602,8 +639,8 @@ body{
         background-position-x: center;
     }
     .objetivo{
-        padding-top: 150px;
-        padding-bottom: 150px;
+        padding-top: 100px;
+        padding-bottom: 100px;
         .objetivo__titulo{
             padding-top: 0px;
             padding-bottom: 0px;

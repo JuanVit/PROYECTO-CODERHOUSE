@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/prueba.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/58dcd15617.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="container-fluid contacto">
@@ -46,42 +47,65 @@
             </div>
         </div>
     </header>
-    <div class="cliente">
-        <h1>Nos debemos al cliente!</h1>
-        <h2>Dejanos tu consulta:</h2>
-    </div>
-    <br>
-    <div class="">
-        <form action="" class="contactoFormulario">
-        <label for="nombre">Nombre: </label>
-        <input type="text" id="nombre" placeholder="Nombre"> 
-        <br>  
-        <br>  
-        <label for="apellido">Apellido: </label>
-        <input type= "text" id="apellido" placeholder="Apellido">
-        <br>
-        <br>
-        <label for="email">Email:</label>
-        <input type="email" placeholder="ejemplo@gmail.com">
-        <br>    
-        <br>
-        <select name="civil" id="civil">
-            <option value="soltero/a">Soltero/a</option>
-            <option value="casado/a">Casado/a</option>
-        </select>
-        <br>
-        <br>
-        <label for="ofertas">Desea recibir ofertas?</label>
-        <input type="checkbox" id="ofertas"> 
-        <br>
-        <br>
-        <textarea name="consulta" id="consulta" cols="30" rows="10" placeholder="Envíanos tu Consulta"></textarea>
-        <br>
-        <br>
-        <button type="button" class="enviar">Enviar Consulta</button>
-        <button type="button" class="borrar">Borrar Información</button>
-        
-    </form>
+    <main class="container contacto-body">
+        <div class class="row">
+            <div class="col-12 text-center py-5">
+                <h2 class="contacto-body__title">Dejanos tu consulta</h2>
+                <p class="contacto-body__text"><span>¿Tenes alguna consulta?</span> No dudes en contactarnos, nuestro equipo te respondera a la brevedad para ayudarte.</p>
+            </div>
+        </div>    
+        <div class="row">
+            <div class="col-md-9 ">
+                <form class="contacto-body__form">
+                    <div class="row">
+                        <div class="col-md-4 px-0 my-5 ml-5">
+                            <div class=>
+                                <input placeholder="Nombre" type="text" name="name" class="input-content">
+                            </div>
+                        </div>
+                        <div class="col-md-4 px-0 my-5 ml-5">
+                            <div class=>
+                                <input placeholder="Email" type="email" name="email" class="input-content">
+                            </div>
+                        </div>
+                        <div class="col-md-12 px-0 my-5 ml-5">
+                            <div class=>
+                                <input placeholder="Motivo de la consulta" type="text" name="motivo" class="input-content">
+                            </div>
+                        </div>
+                        <div class="col-md-12 px-0 my-5 ml-5">
+                            <div class=>
+                                <textarea placeholder="Dejanos tu consulta" class="input-content" name="mensaje" id="mensaje" cols="30" rows="5"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12 px-0 my-5 ml-5">
+                            <div>
+                                <button class="btn btn-primary">Enviar</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-3 text-center contacto-body__side">
+                <ul>
+                    <li>
+                        <i class="fas fa-map-marker-alt contacto-body__side--icon"></i>
+                        <p>Buenos Aires (Argentina)</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope contacto-body__side--icon"></i>
+                        <p>Contacto@realeat.com</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone contacto-body__side--icon"></i>
+                        <p>
+                            XXXX-XXXX
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
     <footer class="container-fluid footer">
         <div class="row">
             <div class="col-12 col-md-5 offset-lg-1  footer__columna-1">
