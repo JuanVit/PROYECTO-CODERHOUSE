@@ -510,7 +510,25 @@ body{
             font-weight: bold;
         }
     }
-
+    .btnForm-box{
+        .btn-form{
+            font-size: 20px;
+            font-weight: bold;
+            padding: 15px 50px;
+            color: $color-primary;
+            background: white;
+            border-radius: 4px;
+            transition:.3s ease-out;
+            outline: none;
+            box-shadow: inset 0 0 0 0 white;
+            border: $color-primary solid 1px;
+            &:hover{
+                box-shadow: inset 163.97px 0 0 0 $color-primary;
+                cursor: pointer;
+                color:white;
+            }
+        }
+    }
     .contacto-body__side{
         ul{
             list-style: none;
