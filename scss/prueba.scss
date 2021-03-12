@@ -52,7 +52,7 @@ body{
 
 }
 .index{
-    background:linear-gradient(180deg, rgba(0, 0, 0, 0.075) , rgba(0, 0, 0, 0.89) ), url(../imagenes/realEatl-img.jpeg);
+    background:linear-gradient(180deg, rgba(0, 0, 0, 0.075) , rgba(0, 0, 0, 0.89) ), url(../imagenes/realEatl-img.jpg);
     @include banner( no-repeat, cover, center, 100%, 150px, white);
 }
     .index__titulo{
@@ -168,7 +168,7 @@ body{
 /* NOSOTROS */ 
 
 .nosotros{
-    background:linear-gradient(180deg, rgba(0, 0, 0, 0.075) , rgba(0, 0, 0, 0.89) ),url(../imagenes/nosotros-background.jpeg);
+    background:linear-gradient(180deg, rgba(0, 0, 0, 0.075) , rgba(0, 0, 0, 0.89) ),url(../imagenes/nosotros-background.jpg);
     @include banner(no-repeat, cover, center,100%, 150px, white);
     .nosotros__titulo{
         @extend .index__titulo;
@@ -230,7 +230,7 @@ body{
         height: 100%;
     }
 .recursos{
-    background:linear-gradient(180deg, rgba(0, 0, 0, 0.075) , rgba(0, 0, 0, 0.89) ),url(../imagenes/img-recursos.jpeg) ;
+    background:linear-gradient(180deg, rgba(0, 0, 0, 0.075) , rgba(0, 0, 0, 0.89) ),url(../imagenes/img-recursos.jpg) ;
     opacity: .9;
     @include banner(no-repeat, cover, center, center, 150px, white);
     padding-top: 50px;
