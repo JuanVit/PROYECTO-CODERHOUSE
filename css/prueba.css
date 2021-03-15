@@ -30,8 +30,7 @@ body {
   color: white;
   transition: all .3s ease; }
   .navbar .nav-item .nav-link:hover {
-    color: #FFA500;
-    font-weight: bold; }
+    color: #FFA500; }
 
 .navbar .nav-item .navLink-active {
   color: #FFA500;
@@ -369,7 +368,7 @@ body {
 
 /* CONTACTO */
 .contacto {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.075), rgba(0, 0, 0, 0.89)), url(../imagenes/contacto-img.jpg);
+  background: url(../imagenes/contacto-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;

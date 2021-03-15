@@ -41,12 +41,11 @@ body{
     .nav-item{
         .nav-link{
             font-size: 20px;
-            font-weight: 550;
+            font-weight:550;
             color: white;
             transition: all .3s ease;
             &:hover{
                 color: 	#FFA500;
-                font-weight: bold;
             }
         }
         .navLink-active{
@@ -444,7 +443,7 @@ body{
 }
 /* CONTACTO */
 .contacto{
-    background:linear-gradient(180deg, rgba(0, 0, 0, 0.075) , rgba(0, 0, 0, 0.89) ),url(../imagenes/contacto-img.jpg);
+    background:url(../imagenes/contacto-img.jpg);
     @include banner(no-repeat, cover, center,100%, 150px, white);
     .contacto__titulo{
         @extend .index__titulo;
