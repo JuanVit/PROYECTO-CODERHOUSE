@@ -11,17 +11,14 @@ $color-secundary:#777777;
     padding-bottom: $padding-bottom;
     color: $color;
 }
-
 *{
     padding: 0;
     margin: 0;
 }
-
 html, body{
     margin: 0%;
     padding: 0%;
 }
-
 body{
     font-family: 'Montserrat', sans-serif;
 }
@@ -49,17 +46,15 @@ body{
             transition: all .5s ease;
         }
     }
-
 }
 .index{
     background:linear-gradient(180deg, rgba(0, 0, 0, 0.075) , rgba(0, 0, 0, 0.89) ), url(../imagenes/realEatl-img.jpg);
     @include banner( no-repeat, cover, center, 100%, 150px, white);
-}
     .index__titulo{
         font-weight: 550;
         padding-top: 150px;
     }
-    
+}  
 .valores{
         padding-top: 100px;
         padding-bottom: 20px;
@@ -566,6 +561,9 @@ body{
         p{
             font-size: 18px;
             font-weight: 550;
+            span{
+                font-weight: bold;
+            }
         }
     }
     .footer__columna-2{

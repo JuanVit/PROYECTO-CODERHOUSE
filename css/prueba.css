@@ -38,10 +38,9 @@ body {
   background-position-y: 100%;
   padding-bottom: 150px;
   color: white; }
-
-.index__titulo, .nosotros .nosotros__titulo, .menu .menu__titulo, .sucursales .sucursales__titulo, .contacto .contacto__titulo {
-  font-weight: 550;
-  padding-top: 150px; }
+  .index .index__titulo, .index .nosotros .nosotros__titulo, .nosotros .index .nosotros__titulo, .index .menu .menu__titulo, .menu .index .menu__titulo, .index .sucursales .sucursales__titulo, .sucursales .index .sucursales__titulo, .index .contacto .contacto__titulo, .contacto .index .contacto__titulo {
+    font-weight: 550;
+    padding-top: 150px; }
 
 .valores {
   padding-top: 100px;
@@ -465,6 +464,8 @@ body {
   .footer .footer__columna-1 p {
     font-size: 18px;
     font-weight: 550; }
+    .footer .footer__columna-1 p span {
+      font-weight: bold; }
   .footer .footer__columna-2 h3 {
     color: white; }
   .footer .footer__columna-2 h3:before {
