@@ -50,10 +50,10 @@ body{
 .index{
     background:linear-gradient(180deg, rgba(0, 0, 0, 0.075) , rgba(0, 0, 0, 0.89) ), url(../imagenes/realEatl-img.jpg);
     @include banner( no-repeat, cover, center, 100%, 150px, white);
-    .index__titulo{
-        font-weight: 550;
-        padding-top: 150px;
-    }
+}
+.index__titulo{
+    font-weight: 550;
+    padding-top: 150px;
 }  
 .valores{
         padding-top: 100px;
