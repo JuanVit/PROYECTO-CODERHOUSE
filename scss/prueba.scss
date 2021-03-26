@@ -523,6 +523,11 @@ button{
         ul{
             list-style: none;
             li{
+                i{
+                    font-size: 45px;
+                    color: #2b4176;
+                    padding-top: 10px;
+                }
                 p{
                     font-size: 16px;
                     font-weight: bold;
@@ -531,10 +536,6 @@ button{
             }
         }
         margin-top: 30px;
-        .contacto-body__side--icon{
-            font-size: 80px;
-            color:	#2b4176;
-        }
     }
 }
 
@@ -573,7 +574,7 @@ button{
         }
         .footer__columna-2--facebook{
             i{
-                font-size: 35px;
+                font-size: 25px;
                 color: $color-secundary;
                 transition: all .5s ease;
                 &:hover{
@@ -584,10 +585,10 @@ button{
         .footer__columna-2--instagram{
             position: relative;
             display: inline-block;
-            height: 30px;
+            height: 22px;
             width: 29px;
             i{
-                font-size: 35px;
+                font-size: 25px;
                 color: $color-secundary;
                 position: absolute;
                 top: 0;
@@ -617,9 +618,9 @@ button{
         }
         .footer__columna-2--twitter{
             i{
-                font-size: 35px;
+                font-size: 25px;
                 color: $color-secundary;
-                padding-left: 15px;
+                padding-left: 5px;
                 transition: all .5s ease;
                 &:hover{
                     color: #1DA1F2;
@@ -627,7 +628,7 @@ button{
             }
         }
         .footer__columna-2--pinterest{
-            font-size: 35px;
+            font-size: 25px;
                 color: $color-secundary;
                 padding-left: 5px;
                 transition: all .5s ease;

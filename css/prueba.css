@@ -439,13 +439,14 @@ button {
     margin-top: 30px; }
     .contacto-body .contacto-body__side ul {
       list-style: none; }
+      .contacto-body .contacto-body__side ul li i {
+        font-size: 45px;
+        color: #2b4176;
+        padding-top: 10px; }
       .contacto-body .contacto-body__side ul li p {
         font-size: 16px;
         font-weight: bold;
         color: #777777; }
-    .contacto-body .contacto-body__side .contacto-body__side--icon {
-      font-size: 80px;
-      color: #2b4176; }
 
 /*FOOTER*/
 .footer {
@@ -471,7 +472,7 @@ button {
     color: #8B4513;
     padding-right: 5px; }
   .footer .footer__columna-2 .footer__columna-2--facebook i {
-    font-size: 35px;
+    font-size: 25px;
     color: #777777;
     transition: all .5s ease; }
     .footer .footer__columna-2 .footer__columna-2--facebook i:hover {
@@ -479,10 +480,10 @@ button {
   .footer .footer__columna-2 .footer__columna-2--instagram {
     position: relative;
     display: inline-block;
-    height: 30px;
+    height: 22px;
     width: 29px; }
     .footer .footer__columna-2 .footer__columna-2--instagram i {
-      font-size: 35px;
+      font-size: 25px;
       color: #777777;
       position: absolute;
       top: 0;
@@ -501,14 +502,14 @@ button {
       .footer .footer__columna-2 .footer__columna-2--instagram .footer__columna-2--instagram-base i:hover {
         opacity: 0; }
   .footer .footer__columna-2 .footer__columna-2--twitter i {
-    font-size: 35px;
+    font-size: 25px;
     color: #777777;
-    padding-left: 15px;
+    padding-left: 5px;
     transition: all .5s ease; }
     .footer .footer__columna-2 .footer__columna-2--twitter i:hover {
       color: #1DA1F2; }
   .footer .footer__columna-2 .footer__columna-2--pinterest {
-    font-size: 35px;
+    font-size: 25px;
     color: #777777;
     padding-left: 5px;
     transition: all .5s ease; }
